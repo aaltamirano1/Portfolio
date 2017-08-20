@@ -1,0 +1,213 @@
+body {
+  margin: 0;
+  font-family:'Arial', sans-serif;
+}
+a, .contactInfo{
+    text-decoration: none;
+    color: black;
+}
+/*
+ *{
+  border: solid blue;
+} 
+*/
+#header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  color: white;
+}
+h1{
+  margin: 10px;
+  font-weight: normal;
+}/*monogram*/
+#header-menu{
+  display:flex;
+  margin-right: 5px;
+}
+li {
+  list-style: none;
+  margin: 0 10px 0 10px;
+}
+li:hover{
+    color: gainsboro;
+}
+#landing-title, #contact, #resume-title{/*red banner*/
+  background-color: #f31414;
+  margin: 80px 0 50px 0;
+  width: 100%;
+  padding: 35px 0;
+}
+#landing h2{
+  font-size:3em;
+  font-family: 'Cantata One', serif;
+  color: white;
+  margin:0;
+  margin-left: 15%;
+}
+#landing h3{
+  margin: 10px 15%;
+  font-size: 2em;
+  color:black;
+  opacity: .45;
+}
+#landing-skills{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+  border-top: solid grey 1px;
+}
+#landing-skills img{
+  opacity:.5;
+}
+#portfolio{
+  width: 65%;
+  margin: 60px auto;
+}
+#portfolio h2{
+  font-size: 2.5em;
+  font-family: 'Cantata One', serif;
+  margin-top: 80px;
+  }
+.projectBox{
+  display: flex;
+  width: 100%;
+  margin: 50px auto;
+}
+.projectBox img{
+  width: 300px;
+  margin: auto;
+}
+.project-textBox{
+  margin-top: 20px;
+  padding-left: 15px;
+}
+.project-textBox h4{
+  font-size: 1.5em;
+  font-family: 'Cantata One', serif;
+  margin: auto;
+}
+.project-textBox p{
+  width: 100%;
+  opacity: .9;
+  margin-bottom:25px;
+}
+.linkButton{
+    border: 3px solid lightgrey;
+    font-weight: bold;
+    padding: 6px;
+    margin-right: 10px;
+    height: 17px;
+    color: lightgrey;
+    margin-top: 50px;
+}
+
+#contact h2, #resume h2{
+  font-size:2.5em;
+  font-family: 'Cantata One', serif;
+  color: white;
+  margin:0;
+  margin-left: 15%;
+}
+#contact h3{
+  margin: 10px 15%; 
+}
+#contact h3, #contact p{
+  font-weight: 300;
+  font-size: 1.3em;
+  color: black;
+  opacity: .5;
+}
+#contact div{
+    display: flex;
+    align-items: center;
+    margin-left: 15%;
+    height: 40px;
+}
+#contact a{
+  font-weight: 300;
+  font-size: 1em;
+}
+#contact img{
+  opacity: .5;
+  height: 25px;
+  margin: 7px;
+}
+
+#resume-title{
+    display: flex;
+    margin-bottom: 30px;
+}
+#resume-title>div{
+    width: 50%;
+}
+.download{
+    border: 3px solid white;
+    font-weight: bold;
+    margin-top: 30px;
+    padding: 6px;
+    height: 20px;
+    color:white;
+}
+#resume-title>div, #resume-main{
+    margin-left: 15%;
+}
+#resume-title h2{
+    font-size: 2em;
+    margin-left: 0;
+}
+.contactInfo{
+    display: block;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.2em;
+    opacity: .65;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+#resume-title p{
+    margin: 0;
+}
+#resume-main{
+      margin-bottom: 80px;
+}
+#resume-main h3{
+  color: #f31414;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+#resume-main h4{
+    margin-bottom: 5px;
+}
+#resume-main span{
+    font-weight: 500;
+    color: grey;
+}
+#resume-main p{
+    opacity: .9;
+}
+@media screen and (max-width: 800px){
+    .projectBox{
+        flex-direction: column;
+    }
+    .project-textBox{
+        padding-left: 0;
+    }
+    .project-textBox h4{
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width: 650px){
+    .download{
+        margin-top: 10px;
+    }
+    #portfolio{
+        width: 80%;
+    }
+
+}
