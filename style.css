@@ -2,7 +2,8 @@ body {
   margin: 0;
   font-family:'Arial', sans-serif;
 }
-a, .contactInfo{
+a,
+.contactInfo{
     text-decoration: none;
     color: black;
 }
@@ -19,11 +20,11 @@ a, .contactInfo{
   left: 0;
   color: white;
 }
-h1{
+h1 {
   margin: 10px;
   font-weight: normal;
 }/*monogram*/
-#header-menu{
+#header-menu {
   display:flex;
   margin-right: 5px;
 }
@@ -31,29 +32,31 @@ li {
   list-style: none;
   margin: 0 10px 0 10px;
 }
-li:hover{
+li:hover {
     color: gainsboro;
 }
-#landing-title, #contact, #resume-title{/*red banner*/
+#landing-title,
+#contact,
+#resume-title {/*red banner*/
   background-color: #f31414;
   margin: 80px 0 50px 0;
   width: 100%;
   padding: 35px 0;
 }
 #landing h2{
-  font-size:3em;
+  font-size: 3em;
   font-family: 'Cantata One', serif;
   color: white;
-  margin:0;
+  margin: 0;
   margin-left: 15%;
 }
-#landing h3{
+#landing h3 {
   margin: 10px 15%;
   font-size: 2em;
-  color:black;
+  color: black;
   opacity: .45;
 }
-#landing-skills{
+#landing-skills {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -62,9 +65,9 @@ li:hover{
   border-top: solid grey 1px;
 }
 #landing-skills img{
-  opacity:.5;
+  opacity: .5;
 }
-#portfolio{
+#portfolio {
   width: 65%;
   margin: 60px auto;
 }
@@ -72,31 +75,31 @@ li:hover{
   font-size: 2.5em;
   font-family: 'Cantata One', serif;
   margin-top: 80px;
-  }
-.projectBox{
+}
+.projectBox {
   display: flex;
   width: 100%;
   margin: 50px auto;
 }
-.projectBox img{
+.projectBox img {
   width: 300px;
   margin: auto;
 }
-.project-textBox{
+.project-textBox {
   margin-top: 20px;
   padding-left: 15px;
 }
-.project-textBox h4{
+.project-textBox h4 {
   font-size: 1.5em;
   font-family: 'Cantata One', serif;
   margin: auto;
 }
-.project-textBox p{
+.project-textBox p {
   width: 100%;
   opacity: .9;
-  margin-bottom:25px;
+  margin-bottom: 25px;
 }
-.linkButton{
+.linkButton {
     border: 3px solid lightgrey;
     font-weight: bold;
     padding: 6px;
@@ -106,61 +109,64 @@ li:hover{
     margin-top: 50px;
 }
 
-#contact h2, #resume h2{
-  font-size:2.5em;
+#contact h2,
+#resume h2 {
+  font-size: 2.5em;
   font-family: 'Cantata One', serif;
   color: white;
-  margin:0;
+  margin: 0;
   margin-left: 15%;
 }
-#contact h3{
+#contact h3 {
   margin: 10px 15%; 
 }
-#contact h3, #contact p{
+#contact h3,
+#contact p{
   font-weight: 300;
   font-size: 1.3em;
   color: black;
   opacity: .5;
 }
-#contact div{
+#contact div {
     display: flex;
     align-items: center;
     margin-left: 15%;
     height: 40px;
 }
-#contact a{
+#contact a {
   font-weight: 300;
   font-size: 1em;
 }
-#contact img{
+#contact img {
   opacity: .5;
   height: 25px;
   margin: 7px;
 }
 
-#resume-title{
+#resume-titl e{
     display: flex;
     margin-bottom: 30px;
 }
-#resume-title>div{
+#resume-title>div {
     width: 50%;
 }
-.download{
+#download {
     border: 3px solid white;
     font-weight: bold;
     margin-top: 30px;
     padding: 6px;
     height: 20px;
-    color:white;
+    color: white;
 }
-#resume-title>div, #resume-main{
+#resume-title>div,
+#resume-main {
     margin-left: 15%;
 }
-#resume-title h2{
+#resume-title h2 {
     font-size: 2em;
     margin-left: 0;
 }
-.contactInfo{
+.contactInfo {
     display: block;
     font-style: normal;
     font-weight: 300;
@@ -173,37 +179,37 @@ li:hover{
 #resume-title p{
     margin: 0;
 }
-#resume-main{
+#resume-main {
       margin-bottom: 80px;
 }
-#resume-main h3{
+#resume-main h3 {
   color: #f31414;
   margin-top: 40px;
   margin-bottom: 15px;
 }
-#resume-main h4{
+#resume-main h4 {
     margin-bottom: 5px;
 }
-#resume-main span{
+#resume-main span {
     font-weight: 500;
     color: grey;
 }
-#resume-main p{
+#resume-main p {
     opacity: .9;
 }
 @media screen and (max-width: 800px){
-    .projectBox{
+    .projectBox {
         flex-direction: column;
     }
-    .project-textBox{
+    .project-textBox {
         padding-left: 0;
     }
-    .project-textBox h4{
+    .project-textBox h4 {
         margin-top: 15px;
     }
 }
 @media screen and (max-width: 650px){
-    .download{
+    #download {
         margin-top: 10px;
     }
     #portfolio{
