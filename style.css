@@ -211,6 +211,7 @@ li:hover {
 @media screen and (max-width: 650px){
     #landing img{
         width: 40px;
+        margin-top: 15px;
     }
     #download {
         margin-top: 10px;
