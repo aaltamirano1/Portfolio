@@ -213,6 +213,9 @@ li:hover {
         width: 40px;
         margin-top: 15px;
     }
+    #jquery{
+        width: 50px;
+    }
     #download {
         margin-top: 10px;
     }
