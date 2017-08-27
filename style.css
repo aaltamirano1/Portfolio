@@ -1,5 +1,11 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
 body {
-  margin: 0;
   font-family:'Arial', sans-serif;
 }
 a,
@@ -7,6 +13,7 @@ a,
     text-decoration: none;
     color: black;
 }
+
 /*
  *{
   border: solid blue;
@@ -26,7 +33,7 @@ h1 {
 }/*monogram*/
 #header-menu {
   display:flex;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 li {
   list-style: none;
@@ -68,36 +75,46 @@ li:hover {
   opacity: .5;
 }
 #portfolio {
-  width: 65%;
+  width: 75%;
   margin: 60px auto;
 }
 #portfolio h2{
   font-size: 2.5em;
   font-family: 'Cantata One', serif;
-  margin-top: 80px;
+  margin: 80px 0 0 0;
+}
+#portfolio-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .projectBox {
   display: flex;
-  width: 100%;
-  margin: 50px auto;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 27%;
+  height: 320px;
+  margin-top: 30px;
+  border: 1px solid black;
+  border-top-width: 10px;
+  padding: 15px;
+  padding-bottom: 25px;
 }
 .projectBox img {
-  width: 300px;
-  margin: auto;
+  width: 97%;
 }
-.project-textBox {
-  margin-top: 20px;
-  padding-left: 15px;
-}
-.project-textBox h4 {
-  font-size: 1.5em;
+.projectBox h4 {
+  font-size: 1.15em;
   font-family: 'Cantata One', serif;
-  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 0;
 }
-.project-textBox p {
+.projectBox p {
   width: 100%;
   opacity: .9;
-  margin-bottom: 25px;
+  font-size: .9em;
+  height: 25%;
+  margin-top: 0;
 }
 .linkButton {
     border: 3px solid lightgrey;
@@ -106,7 +123,6 @@ li:hover {
     margin-right: 10px;
     height: 17px;
     color: lightgrey;
-    margin-top: 50px;
 }
 
 #contact h2,
@@ -180,7 +196,7 @@ li:hover {
     margin: 0;
 }
 #resume-main {
-      margin-bottom: 80px;
+    margin-bottom: 80px;
 }
 #resume-main h3 {
   color: #f31414;
@@ -196,6 +212,11 @@ li:hover {
 }
 #resume-main p {
     opacity: .9;
+}
+@media screen and (max-width: 1000px){
+    .projectBox {
+        width: 40%;
+    }
 }
 @media screen and (max-width: 800px){
     .projectBox {
@@ -225,8 +246,16 @@ li:hover {
     #portfolio img{
         margin-left: 0;
     }
-    #portfolio h3{
-        font-size: 1.5em;
+    #portfolio h2{
+        font-size: 2em;
+        margin-left: 40px;
+    }
+    .projectBox {
+        width: 90%;
+        margin: 30px auto;
+    }
+    .projectBox p {
+        height: 20%;
     }
     #contact h3,
     #contact p{
@@ -236,5 +265,7 @@ li:hover {
     #resume-title>div{
         margin-left: 10%;
     }
-
+    li {
+        font-size: .8em;
+    }
 }
