@@ -19,19 +19,6 @@ a,
   border: solid blue;
 } 
 */
-@keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-}
-#landing h2,
-#landing h3 {
-  animation-duration: 3s;
-  animation-name: fadein;
-}
- </style>
 #header {
   background-color: black;
   display: flex;
@@ -63,18 +50,22 @@ li:hover {
   width: 100%;
   padding: 35px 0;
 }
-#landing h2{
+#title,
+#subtitle {
+    opacity: 0;
+    transition: 2s opacity;
+}
+#title{
   font-size: 3em;
   font-family: 'Cantata One', serif;
   color: white;
   margin: 0;
   margin-left: 15%;
 }
-#landing h3 {
+#subtitle {
   margin: 10px 15%;
   font-size: 2em;
   color: black;
-  opacity: .45;
 }
 #landing-skills {
   display: flex;
