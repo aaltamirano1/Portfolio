@@ -19,6 +19,19 @@ a,
   border: solid blue;
 } 
 */
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+}
+#landing h2,
+#landing h3 {
+  animation-duration: 3s;
+  animation-name: fadein;
+}
+ </style>
 #header {
   background-color: black;
   display: flex;
